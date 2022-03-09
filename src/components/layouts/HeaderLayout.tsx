@@ -3,14 +3,14 @@ import styled from "styled-components";
 // assets
 import Logo from "../../assets/logo.png";
 import Vector from "../../assets/white_house.png";
-import Menu from "./Menu";
+import DrawerMenu from "./DrawerMenu";
 
 // types
 export interface HeaderLayoutProps {}
 const HeaderLayout: React.FunctionComponent<HeaderLayoutProps> = (props) => {
   return (
     <Wrapper>
-      <Menu />
+      <DrawerMenu />
       <ImageWrapper>
         <Image src={Logo} />
       </ImageWrapper>

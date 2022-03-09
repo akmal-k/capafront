@@ -16,7 +16,7 @@ export interface FiltersTypes {
   setFilter: Function;
 }
 
-const Filters: React.FC<FiltersTypes> = (props) => {
+const CheckBoxFilter: React.FC<FiltersTypes> = (props) => {
   const handleChange = (event: SelectChangeEvent<typeof props.filter>) => {
     const {
       target: { value },
@@ -67,7 +67,7 @@ const Filters: React.FC<FiltersTypes> = (props) => {
   );
 };
 
-export default Filters;
+export default CheckBoxFilter;
 
 const Wrapper = styled.div`
   display: inline-block;

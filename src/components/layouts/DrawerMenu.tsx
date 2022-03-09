@@ -8,7 +8,7 @@ import House from "../../assets/Vector.png";
 // types
 export interface MenuItem {}
 
-const Menu: React.FunctionComponent<MenuItem> = (props) => {
+const DrawerMenu: React.FunctionComponent<MenuItem> = (props) => {
   const [openDrawer, setOpenDrawer] = useState(false);
   const handleDrawerOpen = () => {
     setOpenDrawer(!openDrawer);
@@ -53,7 +53,7 @@ const Menu: React.FunctionComponent<MenuItem> = (props) => {
   );
 };
 
-export default Menu;
+export default DrawerMenu;
 
 const DrawerHeader = styled.div`
   display: flex;

@@ -7,7 +7,7 @@ import styled from "styled-components";
 // slice
 import { getData } from "../slice/DataSlice";
 //components
-import Filters from "./Filters";
+import CheckBoxFilter from "./CheckBoxFilter";
 
 // types
 export interface ControllersTypes {}
@@ -31,7 +31,7 @@ const Controllers: React.FC<ControllersTypes> = () => {
   return (
     <Wrapper>
       <FiltersWrapper>
-        <Filters
+        <CheckBoxFilter
           title={"가공방식"}
           options={["밀링", "선반"]}
           filter={method}
@@ -40,7 +40,7 @@ const Controllers: React.FC<ControllersTypes> = () => {
             handleChange(value, material, status);
           }}
         />
-        <Filters
+        <CheckBoxFilter
           title={"재료"}
           options={["알루미늄", "탄소강", "구리", "합금강", "강철"]}
           filter={material}
